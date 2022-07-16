@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #E70187;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.active, .collapse ul li:hover {
+    background: #FF4DB5;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.collapse ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    background: #FF4DB5;
+}
+
+.collapse ul li:hover .dropdown-menu {
+    display: flex;
+}
+
+.collapse ul li:hover .dropdown-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.collapse ul li:hover .dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.collapse ul li:hover .dropdown-menu ul li:hover {
+    background: #E70187;
+    border-radius: 5px;
+}
+
+.registration .btn {
+    background: #F0E900;
+    color: #000;
+    width: 80px;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;   
+    transition: 0.3s;
+}
+
+.hero .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-weight: bold;
+}
+
+/* registration */
+.regist {
+    padding-top: 50px;
+}
+
+.regist .card {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 50px;
+    overflow: auto;
+    padding: 34px;
+    font-size: 18px;
+}
+
+.login-input input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #a0a0a0;
+    border-radius: 8px;
+}
+
+.login-input button {
+    margin-top: 32px;
+    padding: 8px 32px;
+    background-color: #212936;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.daftar {
+    background: #FF4DB5;
+    max-width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.registration .card {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 50px;
+    overflow: auto;
+    padding: 34px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .regist .card {
+        width: 100%;
+        height: auto;
+    }
+    
+    .daftar {
+        background: #FF4DB5;
+        max-width: 100%;
+        height: auto;
+    }
+    .registration .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.pop-up-modal {
+    position: fixed;
+    padding: 8px 32px;
+    background-color: #cc0000;
+    color: white;
+    bottom: -100px;
+    opacity: 0;
+    text-transform: capitalize;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: bottom ease-in-out 0.3s, opacity ease-in-out 0.3s;
+}
+
+.pop-up-modal h2 {
+    padding: 6px;
+}
+
+.pop-up-modal p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.pop-up-modal.display {
+    bottom: 32px;
+    opacity: 1;
+}
